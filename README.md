@@ -143,7 +143,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@alanr0ybal](https://www.instagram.com/alanr0ybal/) - alanroybal05@gmail.com
+Alan Roybal - [@alanr0ybal](https://www.instagram.com/alanr0ybal/) - alanroybal05@gmail.com
 
 Project Link: [https://github.com/AlanRoybal/Java2DGame](https://github.com/AlanRoybal/Java2DGame)
 
@@ -164,15 +164,15 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/AlanRoybal/Java2DGame.svg?style=for-the-badge
+[contributors-url]: https://github.com/AlanRoybal/Java2DGame/contributors
+[forks-shield]: https://img.shields.io/github/forks/AlanRoybal/Java2DGame.svg?style=for-the-badge
+[forks-url]: https://github.com/AlanRoybal/Java2DGame/members
+[stars-shield]: https://img.shields.io/github/stars/AlanRoybal/Java2DGame.svg?style=for-the-badge
+[stars-url]: https://github.com/AlanRoybal/Java2DGame/stargazers
+[issues-shield]: https://img.shields.io/github/issues/AlanRoybal/Java2DGame.svg?style=for-the-badge
+[issues-url]: https://github.com/AlanRoybal/Java2DGame/issues
+[license-shield]: https://img.shields.io/github/license/AlanRoybal/Java2DGame.svg?style=for-the-badge
+[license-url]: https://github.com/AlanRoybal/Java2DGame/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: https://linkedin.com/in/alan-roybal
