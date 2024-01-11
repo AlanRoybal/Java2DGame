@@ -13,8 +13,8 @@ import main.GamePanel;
 public class TileManager {
     
     GamePanel gp;
-    Tile[] tile;
-    int mapTileNum[][];
+    public Tile[] tile;
+    public int mapTileNum[][];
 
     public TileManager(GamePanel gp) {
 
@@ -37,16 +37,19 @@ public class TileManager {
             tile[0].image = ImageIO.read(getClass().getResourceAsStream("/res/tiles/grasstile.png"));
 
             tile[1] = new Tile();
-            tile[1].image = ImageIO.read(getClass().getResourceAsStream("/res/tiles/watertile.png"));
+            tile[1].image = ImageIO.read(getClass().getResourceAsStream("/res/tiles/woodtile.png"));
+            tile[1].collision = true;
 
             tile[2] = new Tile();
-            tile[2].image = ImageIO.read(getClass().getResourceAsStream("/res/tiles/woodtile.png"));
+            tile[2].image = ImageIO.read(getClass().getResourceAsStream("/res/tiles/watertile.png"));
+            tile[2].collision = true;
 
             tile[3] = new Tile();
-            tile[3].image = ImageIO.read(getClass().getResourceAsStream("/res/tiles/treetile.png"));
+            tile[3].image = ImageIO.read(getClass().getResourceAsStream("/res/tiles/mudtile.png"));
 
             tile[4] = new Tile();
-            tile[4].image = ImageIO.read(getClass().getResourceAsStream("/res/tiles/mudtile.png"));
+            tile[4].image = ImageIO.read(getClass().getResourceAsStream("/res/tiles/treetile.png"));
+            tile[4].collision = true;
 
             tile[5] = new Tile();
             tile[5].image = ImageIO.read(getClass().getResourceAsStream("/res/tiles/sandtile.png"));
