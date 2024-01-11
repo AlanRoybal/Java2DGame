@@ -29,8 +29,8 @@ public class Player extends Entity{
     }
 
     public void setDefaultValues() {
-        worldx = gp.tileSize * 7;
-        worldy = gp.tileSize * 6;
+        worldX = gp.tileSize * 23;
+        worldY = gp.tileSize * 21;
         speed = 4;
         direction = "down";
     }
@@ -56,19 +56,19 @@ public class Player extends Entity{
         if (keyH.upPressed == true || keyH.downPressed == true || keyH.leftPressed == true || keyH.rightPressed == true) {
             if(keyH.upPressed == true) {
             direction = "up";
-            worldy -= speed;
+            worldY -= speed;
             }
             else if(keyH.downPressed == true) {
                 direction = "down";
-                worldy += speed;
+                worldY += speed;
             }
             else if (keyH.leftPressed == true) {
                 direction = "left";
-                worldx -= speed;
+                worldX -= speed;
             }
             else if (keyH.rightPressed == true) {
                 direction = "right";
-                worldx += speed;
+                worldX += speed;
             }
 
             spriteCounter++;
