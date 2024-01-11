@@ -16,5 +16,4 @@ public class ITEM_Yarn extends SuperItem {
             e.printStackTrace();
         }
     }
-    
 }

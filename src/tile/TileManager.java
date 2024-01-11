@@ -90,7 +90,6 @@ public class TileManager {
         br.close();
 
        } catch (Exception e) {
-        // TODO: handle exception
        } 
     }
 

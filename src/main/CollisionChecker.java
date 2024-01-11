@@ -69,5 +69,63 @@ public class CollisionChecker {
                 break;
         }
     }
-    
+
+    public int checkItem(Entity entity, boolean player) {
+
+        int index = 999;
+
+        for(int i = 0; i < gp.item.length; i++) {
+
+            if(gp.item[i] != null) {
+
+                //GET ENTITY'S SOLID AREA POSITION
+                entity.solidArea.x = entity.worldX + entity.solidArea.x;
+                entity.solidArea.y = entity.worldY + entity.solidArea.y;
+
+                //GET ITEM'S SOLID AREA POSITION
+                gp.item[i].solidArea.x = gp.item[i].worldX + gp.item[i].solidArea.x;
+                gp.item[i].solidArea.y = gp.item[i].worldY + gp.item[i].solidArea.y;
+
+                switch (entity.direction) {
+                    case "up":
+                        entity.solidArea.y -= entity.speed;
+
+                        if(entity.solidArea.intersects(gp.item[i].solidArea)) {
+                            System.out.println("hi");
+                        }
+                        break;
+
+                    case "down":
+                        entity.solidArea.y += entity.speed;
+
+                        if(entity.solidArea.intersects(gp.item[i].solidArea)) {
+                            System.out.println("hi");
+                        }
+                        break;
+
+                    case "left":
+                        entity.solidArea.x -= entity.speed;
+
+                        if(entity.solidArea.intersects(gp.item[i].solidArea)) {
+                            System.out.println("hi");
+                        }
+                        break;
+
+                    case "right":
+                        entity.solidArea.x += entity.speed;
+
+                        if(entity.solidArea.intersects(gp.item[i].solidArea)) {
+                            System.out.println("hi");
+                        }
+                        break;
+                }
+                entity.solidArea.x = entity.solidAreaDefaultX;
+                entity.solidArea.x = entity.solidAreaDefaultY;
+                gp.item[i].solidArea.x = gp.item[i].solidAreaDefaultX;
+                gp.item[i].solidArea.y = gp.item[i].solidAreaDefaultY;
+            }
+        }
+
+        return index;
+    }
 }

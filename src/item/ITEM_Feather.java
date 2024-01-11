@@ -15,6 +15,7 @@ public class ITEM_Feather extends SuperItem {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        collision = true;
     }
     
 }
