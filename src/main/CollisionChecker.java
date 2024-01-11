@@ -91,7 +91,13 @@ public class CollisionChecker {
                         entity.solidArea.y -= entity.speed;
 
                         if(entity.solidArea.intersects(gp.item[i].solidArea)) {
-                            System.out.println("hi");
+                            
+                            if(gp.item[i].collision == true) {
+                                entity.collisionOn = true;
+                            }
+                            if(player == true) {
+                                index = i;
+                            }
                         }
                         break;
 
@@ -99,7 +105,13 @@ public class CollisionChecker {
                         entity.solidArea.y += entity.speed;
 
                         if(entity.solidArea.intersects(gp.item[i].solidArea)) {
-                            System.out.println("hi");
+                            
+                            if(gp.item[i].collision == true) {
+                                entity.collisionOn = true;
+                            }
+                            if(player == true) {
+                                index = i;
+                            }
                         }
                         break;
 
@@ -107,7 +119,13 @@ public class CollisionChecker {
                         entity.solidArea.x -= entity.speed;
 
                         if(entity.solidArea.intersects(gp.item[i].solidArea)) {
-                            System.out.println("hi");
+                            
+                            if(gp.item[i].collision == true) {
+                                entity.collisionOn = true;
+                            }
+                            if(player == true) {
+                                index = i;
+                            }
                         }
                         break;
 
@@ -115,7 +133,13 @@ public class CollisionChecker {
                         entity.solidArea.x += entity.speed;
 
                         if(entity.solidArea.intersects(gp.item[i].solidArea)) {
-                            System.out.println("hi");
+                            
+                            if(gp.item[i].collision == true) {
+                                entity.collisionOn = true;
+                            }
+                            if(player == true) {
+                                index = i;
+                            }
                         }
                         break;
                 }

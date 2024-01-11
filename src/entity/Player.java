@@ -17,6 +17,7 @@ public class Player extends Entity{
 
     public final int screenX;
     public final int screenY;
+    int hasKey = 0;
 
     public Player(GamePanel gp, KeyHandler keyH) {
         this.gp = gp;
@@ -78,6 +79,7 @@ public class Player extends Entity{
 
             //CHECK ITEM COLLISION
             int itemIntex = gp.cChecker.checkItem(this, true);
+            pickUpItem(itemIntex);
 
             //IF COLLISION IS FALSE, PLAYER CAN MOVE
 
@@ -114,6 +116,33 @@ public class Player extends Entity{
                 }
                 spriteCounter = 0;
             }  
+        }
+    }
+
+    public void pickUpItem(int i) {
+
+        if(i != 999) {
+            
+            String itemName = gp.item[i].name;
+
+            switch(itemName) {
+                case "Yarn":
+                    hasKey++;
+                    gp.item[i] = null;
+                    System.out.println(hasKey);
+                    break;
+                case "Feather":
+                    if(hasKey > 0) {
+                        gp.item[i] = null;
+                        hasKey--;
+                        System.out.println(hasKey);
+                    }
+                    break;
+                case "Collar":
+                    break;
+                case "Fish":
+                    break;
+            }
         }
     }
 
