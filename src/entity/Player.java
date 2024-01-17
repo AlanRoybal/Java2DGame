@@ -139,6 +139,8 @@ public class Player extends Entity{
                     }
                     break;
                 case "Collar":
+                    speed += 2;
+                    gp.item[i] = null;
                     break;
                 case "Fish":
                     break;
