@@ -127,11 +127,13 @@ public class Player extends Entity{
 
             switch(itemName) {
                 case "Yarn":
+                    gp.playSE(1);
                     hasKey++;
                     gp.item[i] = null;
                     System.out.println(hasKey);
                     break;
                 case "Feather":
+                    gp.playSE(3);
                     if(hasKey > 0) {
                         gp.item[i] = null;
                         hasKey--;
@@ -139,6 +141,7 @@ public class Player extends Entity{
                     }
                     break;
                 case "Collar":
+                    gp.playSE(2);
                     speed += 2;
                     gp.item[i] = null;
                     break;
