@@ -137,15 +137,21 @@ public class Player extends Entity{
                     if(hasKey > 0) {
                         gp.item[i] = null;
                         hasKey--;
-                        System.out.println(hasKey);
+                        gp.ui.showMessage("You moved the feather");
+                    } else {
+                        gp.ui.showMessage("You need a yarn ball");
                     }
                     break;
                 case "Collar":
                     gp.playSE(2);
                     speed += 2;
                     gp.item[i] = null;
+                    gp.ui.showMessage("You got a collar");
                     break;
                 case "Fish":
+                    gp.ui.gameFinished = true;
+                    gp.stopMusic();
+                    gp.playSE(4);
                     break;
             }
         }
