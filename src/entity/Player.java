@@ -130,7 +130,7 @@ public class Player extends Entity{
                     gp.playSE(1);
                     hasKey++;
                     gp.item[i] = null;
-                    System.out.println(hasKey);
+                    gp.ui.showMessage("You got a yarn ball");
                     break;
                 case "Feather":
                     gp.playSE(3);
