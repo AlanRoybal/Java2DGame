@@ -91,7 +91,7 @@ Download: [https://www.oracle.com/java/technologies/downloads/](https://www.orac
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/AlanRoybal/Java2DGame.git
    ```
 2. Run the Main.java file
 
